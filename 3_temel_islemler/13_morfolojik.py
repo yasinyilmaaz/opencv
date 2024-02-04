@@ -3,7 +3,7 @@ import numpy as np
 
 # erezyon yöntemi 
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/klon.jpg",0) 
+img = cv2.imread("C:/Users/Yasin/Desktop/opencv/opencv/3_temel_islemler/media/klon.jpg",0) 
 kernel = np.ones((5,5), np.uint8)
 # Görüntüyü bozar
 erosion = cv2.erode(img,kernel,iterations=1)

@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-vid = cv2.VideoCapture("C:/Users/Yasin/Desktop/opencv\opencv/5_hough_transform/media/line.mp4")
+vid = cv2.VideoCapture("C:/Users/Yasin/Desktop/opencv/opencv/5_hough_transform/media/line.mp4")
 
 
 while True:
