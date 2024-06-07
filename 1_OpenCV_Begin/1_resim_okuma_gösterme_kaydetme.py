@@ -1,7 +1,7 @@
 import cv2
 
 # Resmi normal bir şekilde okur
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/klon.jpg")
+img = cv2.imread("opencv/3_temel_islemler/klon.jpg")
 
 # print(img) #Resimler renk yoğunlukarından oluşan matrikslerdir
 

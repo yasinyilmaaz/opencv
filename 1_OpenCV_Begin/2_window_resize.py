@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/klon.jpg")
+img = cv2.imread("opencv/3_temel_islemler/klon.jpg")
 
 # istediğimiz boyutlarda resmi ayarlamak için kullanırız
 img = cv2.resize(img, (640,480))
