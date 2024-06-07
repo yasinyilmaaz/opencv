@@ -6,11 +6,8 @@ path= "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\Mission\\media\\many3.jpeg"
 image = cv2.imread(path)
 image = cv2.resize(image, (1280,980))
 shifted = cv2.pyrMeanShiftFiltering(image, 21, 81)
-# convert the mean shift image to grayscale, then apply
-# Otsu's thresholding
 
-# convert the mean shift image to grayscale, then apply
-# Otsu's thresholding
+
 gray = cv2.cvtColor(shifted, cv2.COLOR_BGR2GRAY)
 gray = cv2.medianBlur(gray, 5)
 thresh = cv2.threshold(gray, 0, 255,
@@ -32,10 +29,6 @@ many = len(contours)
 cv2.putText(image,f"{many} tane para",(20,40),cv2.FONT_HERSHEY_TRIPLEX,1,(0,0,255))
 for i in range(len(contours)):
     cv2.drawContours(markers, contours, i, (i+1), -1)
-
-
-
-
 
 markers = cv2.watershed(image, markers)
 image[markers == -1] = [0,0,255]

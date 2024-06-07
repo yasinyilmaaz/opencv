@@ -1,8 +1,9 @@
 import cv2
 import numpy as np
 # Görüntüdeki Paraları tespit eden ve kaç tane olduğunu yazan kod
+path= "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\Mission\\media\\many3.jpeg"
 
-path= "media\\many2.jpeg"
+# path= "media\\many2.jpeg"
 
 img = cv2.imread(path)
 img = cv2.resize(img, (720,640))

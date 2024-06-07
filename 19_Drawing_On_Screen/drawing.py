@@ -9,6 +9,7 @@ kernel = (5,5)
 lower_blue = np.array([44, 98, 137])
 upper_blue = np.array([97, 255, 255])
 
+# Ekranda çizilen noktaları rengine göre tuttuğumuz alan
 blue_points = [deque(maxlen=512)]
 green_points = [deque(maxlen=512)]
 red_points = [deque(maxlen=512)]
@@ -38,12 +39,13 @@ cv2.putText(paintWindow,"RED", (420,33),font,0.5,(255,255,255),2,cv2.LINE_AA)
 cv2.putText(paintWindow,"YELLOW", (520,33),font,0.5,(255,255,255),2,cv2.LINE_AA)
 
 cv2.namedWindow("Paint")
+font_size = 1
 
 
 while 1:
-
     ret, frame = cap.read()
     frame = cv2.flip(frame,1)
+    cv2.rectangle(frame,(300,80),(635,330),(0,255,255),0)  
     hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
     # BUTONLARI OLUŞTURUYORUZ
     frame = cv2.rectangle(frame,(40,1),(140,65),(0,0,0),2)
@@ -72,8 +74,9 @@ while 1:
 
     center = None
 
-    # işaretci nesnemizin konumlarını alıp etrafına daire çizdik
+    
     if len(contours) > 0:
+        # işaretci nesnemizin konumlarını alıp etrafına daire çizdik
         max_contours = sorted(contours,key = cv2.contourArea,reverse=True)[0]
         ((x,y), radius) = cv2.minEnclosingCircle(max_contours)
         cv2.circle(frame, (int(x),int(y)), int(radius), (255,26,255), 3)
@@ -104,15 +107,17 @@ while 1:
                 elif 505<= center[0] <=600:
                     color_index = 3
             else:
-                # Listenin içine seçilen renkteki çizim konumlarını kaydediyor
-                if color_index == 0:
-                    blue_points[blue_index].appendleft(center)
-                elif color_index == 1:
-                    green_points[green_index].appendleft(center)
-                elif color_index == 2:
-                    red_points[red_index].appendleft(center)
-                elif color_index == 3:
-                    yellow_points[yellow_index].appendleft(center)
+                if 300<center[0]<635:
+                    if 80<center[1]<330:
+                        # Listenin içine seçilen renkteki çizim konumlarını kaydediyor
+                        if color_index == 0:
+                            blue_points[blue_index].appendleft(center)
+                        elif color_index == 1:
+                            green_points[green_index].appendleft(center)
+                        elif color_index == 2:
+                            red_points[red_index].appendleft(center)
+                        elif color_index == 3:
+                            yellow_points[yellow_index].appendleft(center)
         except:
             pass
     else:
@@ -136,14 +141,23 @@ while 1:
             for k in range(1,len(points[i][j])):
                 if points[i][j][k-1] is None or points[i][j][k] is None:
                     continue
-                cv2.line(frame,points[i][j][k-1],points[i][j][k],colors[i],2)
-                cv2.line(paintWindow,points[i][j][k-1],points[i][j][k],colors[i],2)
+                cv2.line(frame,points[i][j][k-1],points[i][j][k],colors[i],font_size)
+                cv2.line(paintWindow,points[i][j][k-1],points[i][j][k],colors[i],font_size)
 
     cv2.imshow("Frame", frame)
     cv2.imshow("Paint", paintWindow)
 
+    if cv2.waitKey(5) & 0XFF ==ord("e"):
+        print(font_size)
+        font_size = font_size +1
+
+    if cv2.waitKey(5) & 0XFF ==ord("r"):
+        if font_size != 1:
+            font_size -= 1
+
     if cv2.waitKey(5) & 0XFF ==ord("q"):
         break
+
 
 cap.release()
 cv2.destroyAllWindows()
