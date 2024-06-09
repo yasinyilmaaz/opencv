@@ -5,7 +5,7 @@ import imutils
 
 # Araç plakası okuma uygulaması 
 
-path = "C:\\Users\\Yasin\\Desktop\\opencv\\16_licence_plate_detection\\media\\licence_plate.jpg"
+path = "opencv\\16_licence_plate_detection\\media\\licence_plate.jpg"
 img = cv2.imread(path)
 img = cv2.resize(img,(720,640))
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 
 
-path_cascade_eye ="C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\10_Eye_Detection\\haar_detection\\haarcascade_eye.xml"
-path_cascade_face ="C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\10_Eye_Detection\\haar_detection\\frontalface.xml"
+path_cascade_eye ="opencv\\10_Eye_Detection\\haar_detection\\haarcascade_eye.xml"
+path_cascade_face ="opencv\\10_Eye_Detection\\haar_detection\\frontalface.xml"
 
 cap = cv2.VideoCapture(0)
 face_cascade = cv2.CascadeClassifier(path_cascade_face)

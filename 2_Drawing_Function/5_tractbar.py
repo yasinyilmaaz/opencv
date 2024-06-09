@@ -2,11 +2,11 @@ import cv2
 import numpy as np 
 
 
-# Bu fonksiyon cv2.createTrackbar fonksiyonu için böyle bir değer istiyor
+# Bu fonksiyon cv2.createTrackbar fonksiyonu için boş bir fonksiyona gerek var
 def nothing():
     pass
 
-img = np.zeros((512,512,3),np.uint8)
+img = np.zeros((700,512,3),np.uint8)
 cv2.namedWindow("image")
 
 # Renk değerlerini almak için barlar oluşturduk

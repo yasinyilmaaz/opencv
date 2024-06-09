@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/klon.jpg")
+img = cv2.imread(r"opencv\3_temel_islemler\media\klon.jpg")
 # img boyutları kanal verisini verir
 dimession = img.shape
 print(dimession)

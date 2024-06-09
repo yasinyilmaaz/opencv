@@ -2,7 +2,7 @@
 # İstenilen bölge
 import cv2
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/klon.jpg")
+img = cv2.imread(r"opencv\3_temel_islemler\media\klon.jpg")
 # En boy oranını çekildi
 print(img[:2])
 # Resmindeki askerin kafasının bulunduğu aralık alındı

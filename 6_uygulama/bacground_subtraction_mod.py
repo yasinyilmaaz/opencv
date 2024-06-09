@@ -4,7 +4,7 @@ import numpy as np
 # Arka plan çıkarma mod
 
 
-cap = cv2.VideoCapture("C:/Users/Yasin/Desktop/opencv/opencv/6_uygulama/media/car.mp4")
+cap = cv2.VideoCapture("opencv/6_uygulama/media/car.mp4")
 # detectShadows=True ==> Gölgeleride tespit eder    
 # history=100 ==> alınan frame sayısı
 subtractor = cv2.createBackgroundSubtractorMOG2(history=100,varThreshold=50,detectShadows=True)

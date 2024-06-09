@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv\opencv/5_hough_transform/media/h_line.png")
+img = cv2.imread("opencv/5_hough_transform/media/h_line.png")
 
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray,75,150)

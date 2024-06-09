@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/klon.jpg",0)
+img = cv2.imread("opencv/3_temel_islemler/media/klon.jpg",0)
 # satır ve sütun piksel sayıları
 row,col  = img.shape
 

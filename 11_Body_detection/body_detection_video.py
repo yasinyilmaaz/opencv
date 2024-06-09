@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 # Opencv ile insan vücudu bulma videoda
 
-path_video = "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\11_Body_detection\\media\\body.mp4"
-path_cascade = "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\11_Body_detection\\Haar_Cascade\\fullbody.xml"
+path_video = "opencv\\11_Body_detection\\media\\body.mp4"
+path_cascade = "opencv\\11_Body_detection\\Haar_Cascade\\fullbody.xml"
 
 cap = cv2.VideoCapture(path_video)
 body_cascade = cv2.CascadeClassifier(path_cascade)

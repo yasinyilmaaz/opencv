@@ -1,7 +1,7 @@
 from __future__ import print_function
 import numpy as np
 import cv2
-path= "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\Mission\\media\\many3.jpeg"
+path= "opencv\\Mission\\media\\many3.jpeg"
 
 image = cv2.imread(path)
 image = cv2.resize(image, (1280,980))

@@ -1,6 +1,6 @@
 import cv2
 
-img = cv2.imread('C:/Users/Yasin/Desktop/opencv/opencv/4_contours/media/contour.png')
+img = cv2.imread('opencv/4_contours/media/contour.png')
 
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 

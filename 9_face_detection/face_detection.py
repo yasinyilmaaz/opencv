@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-path_cascade = "C:/Users/Yasin/Desktop/opencv/opencv/9_face_detection/haar_detection/frontalface.xml"
-path_img = "C:/Users/Yasin/Desktop/opencv/opencv/9_face_detection/media/face.png"
+path_cascade = "opencv/9_face_detection/haar_detection/frontalface.xml"
+path_img = "opencv/9_face_detection/media/face.png"
 
 img = cv2.imread(path_img)
 face_cascade = cv2.CascadeClassifier(path_cascade)

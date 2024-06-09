@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-path_cascade = "C:/Users/Yasin/Desktop/opencv/opencv/9_face_detection/haar_detection/frontalface.xml"
+path_cascade = "opencv/9_face_detection/haar_detection/frontalface.xml"
 
 
 cap = cv2.VideoCapture(0)

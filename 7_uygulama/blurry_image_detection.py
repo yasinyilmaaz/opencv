@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 # Bir resmin blurlu olup olmadığına bakma
 
-path1 ="C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/starwars.jpg"
+path1 ="opencv/7_uygulama/media/starwars.jpg"
 
 img = cv2.imread(path1)
 blurry_img = cv2.medianBlur(img, 7)

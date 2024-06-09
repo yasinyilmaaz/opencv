@@ -7,16 +7,16 @@ def resizeWidthAspectRatio(img, width= None, height= None, inter= cv2.INTER_AREA
     dimension = None
     (h, w)= img.shape[:2]
 
-    # Eğer iki değer de girilmiş ise o boyutlara göre yapar
+    # Eğer iki değer de girilmemiş ise o boyutlara göre yapar
     if width is  None and height is None:
         return img
     # Eğer width değeri yoksa width değerini height değerine göre orantılar
     elif(width is None):
-        r = height / float(h)
+        r = height / float(h) # oranı bulur
         dimension = (int(w*r),height)
     # Eğer height değeri yoksa height değerini width değerine göre orantılar
     else:
-        r = width / float(w) #
+        r = width / float(w)
         dimension = (int(h*r),width)
 
     return cv2.resize(img, dimension,interpolation=inter)

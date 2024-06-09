@@ -4,8 +4,8 @@ import numpy as np
 # 0 --> siyah
 # 1 --> beyaz
 
-img1 = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/bitwise_1.png")
-img2 = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/bitwise_2.png")
+img1 = cv2.imread("opencv/3_temel_islemler/media/bitwise_1.png")
+img2 = cv2.imread("opencv/3_temel_islemler/media/bitwise_2.png")
 
 # Bit düzeyinde and komutu
 # 0 ve 1 = 0

@@ -1,8 +1,8 @@
 import cv2
 import numpy as np 
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/text.png")
-img2 = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/contour.png")
+img = cv2.imread("opencv/3_temel_islemler/media/text.png")
+img2 = cv2.imread("opencv/3_temel_islemler/media/contour.png")
 
 gray = cv2.cvtColor(img2, cv2.COLOR_BGR2GRAY)
 # floata çevirdik

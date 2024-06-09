@@ -3,9 +3,9 @@ import numpy as np
 # Resim Yumuşatma demek
 
 
-img_filter = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/filter.png")
-img_median = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/median.png")
-img_bilateral = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/bilateral.png")
+img_filter = cv2.imread(r"opencv\3_temel_islemler\media\filter.png")
+img_median = cv2.imread("opencv/3_temel_islemler/media/median.png")
+img_bilateral = cv2.imread("opencv/3_temel_islemler/media/bilateral.png")
 
 # (5,5)Resmin yumuşama değeri ==> değerleri pozitif tek sayılar olması gerekir
 blur = cv2.blur(img_filter, (5,5))

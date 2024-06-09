@@ -4,13 +4,13 @@ import cv2
 # video = Birçok karenin bir araya gelmesidir
 
 # video okuma işlemi
-# eğer wepcam kullanmak için 0 yazarız
-#  eğer kayıtlı bir video kullanacaksak adresini kullanırız
+# wepcam kullanmak için 0 yazarız
+# kayıtlı bir video kullanacaksak adresini kullanırız
 # cap = cv2.VideoCapture(0,cv2.CAP_DSHOW)
 cap = cv2.VideoCapture("antalya.mp4")
 
 
-# videoların karaleriniokuyarak tek tek göstereceğiz
+# videoların karalerini okuyarak tek tek göstereceğiz
 # direk video okumak diye şuanlık birşey yok!!!!
 
 while True:
@@ -27,5 +27,5 @@ while True:
     if cv2.waitKey(50) & 0XFF == ord("q"):
         break
 
-cap.release()
+cap.release() # videoyu kapatır
 cv2.destroyAllWindows()

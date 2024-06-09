@@ -19,7 +19,7 @@ from matplotlib import pyplot as plt
 # Gösterir
 # plt.show()
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/smile.jpg")
+img = cv2.imread("opencv/3_temel_islemler/media/smile.jpg")
 b,g,r = cv2.split(img)
 cv2.imshow("img",img)
 plt.hist(b.ravel(),256,[0,256])

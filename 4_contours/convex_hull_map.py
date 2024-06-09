@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-img = cv2.imread('C:/Users/Yasin/Desktop/opencv/opencv/4_contours/media/map.jpg')
+img = cv2.imread('opencv/4_contours/media/map.jpg')
 
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 blur = cv2.blur(gray,(3,3))

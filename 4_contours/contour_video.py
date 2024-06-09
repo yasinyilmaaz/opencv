@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 
-cap = cv2.VideoCapture('C:/Users/Yasin/Desktop/opencv/opencv/4_contours/media/dog.mp4')
+cap = cv2.VideoCapture('opencv/opencv/4_contours/media/dog.mp4')
 
 while 1:
 

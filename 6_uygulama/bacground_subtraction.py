@@ -5,7 +5,7 @@ import numpy as np
 # ilk frame ile karşılaştıralacak
 # aynı olan yerler siyaha farklı olan yerler beyaza boyanacak
 
-cap = cv2.VideoCapture("C:/Users/Yasin/Desktop/opencv/opencv/6_uygulama/media/car.mp4")
+cap = cv2.VideoCapture("opencv/6_uygulama/media/car.mp4")
 # ilk frame alıyoruz
 ret, first_frame = cap.read()
 cv2.resize(first_frame,(640,480))

@@ -3,7 +3,7 @@ import cv2
 # Resmi normal bir şekilde okur
 img = cv2.imread("opencv/3_temel_islemler/klon.jpg")
 
-# print(img) #Resimler renk yoğunlukarından oluşan matrikslerdir
+print(img) #Resimler renk yoğunlukarından oluşan matrikslerdir
 
 # Resmi gri tonlarda okur 0 da yazılabilir
 # img = cv2.imread("klon.jpg",cv2.IMREAD_GRAYSCALE)

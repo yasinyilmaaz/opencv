@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 # Kenarları belirleme
 
-img = cv2.imread('C:/Users/Yasin/Desktop/opencv/opencv/4_contours/media/contour.png')
+img = cv2.imread('opencv/4_contours/media/contour.png')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 
 _,thresh = cv2.threshold(gray,127,255,cv2.THRESH_BINARY)

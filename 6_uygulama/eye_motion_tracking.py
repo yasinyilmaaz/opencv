@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 # Göz bebeği takibi
 
-cap = cv2.VideoCapture("C:/Users/Yasin/Desktop/opencv/opencv/6_uygulama/media/eye_motion.mp4")
+cap = cv2.VideoCapture("opencv/6_uygulama/media/eye_motion.mp4")
 
 while 1:
     ret, frame = cap.read()

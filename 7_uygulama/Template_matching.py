@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 # Elimizdeki şablonu görüntü içinde bulma
 
-path1 = "C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/starwars.jpg"
-path2 = "C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/starwars2.jpg"
+path1 = "opencv/7_uygulama/media/starwars.jpg"
+path2 = "opencv/7_uygulama/media/starwars2.jpg"
 
 img1 = cv2.imread(path1)
 gray_img = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)

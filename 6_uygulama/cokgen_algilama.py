@@ -4,7 +4,7 @@ import numpy as np
 font = cv2.FONT_HERSHEY_SIMPLEX
 font2 = cv2.FONT_HERSHEY_COMPLEX
 
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/opencv/6_uygulama/media/polygons.png")
+img = cv2.imread("opencv/6_uygulama/media/polygons.png")
 
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 

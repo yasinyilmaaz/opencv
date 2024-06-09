@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 # Opencv ile insan vücudu bulma
 
-path_img = "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\11_Body_detection\\media\\body.jpg"
-path_cascade = "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\11_Body_detection\\Haar_Cascade\\fullbody.xml"
+path_img = "opencv\\11_Body_detection\\media\\body.jpg"
+path_cascade = "opencv\\11_Body_detection\\Haar_Cascade\\fullbody.xml"
 
 img = cv2.imread(path_img)
 body_cascade = cv2.CascadeClassifier(path_cascade)

@@ -5,7 +5,7 @@ import pytesseract
 
 # Araba sayfa uygulaması
 
-path ="C:\\Users\\Yasin\\Desktop\\opencv\\17_Car_Counting\\media\\traffic.avi"
+path ="opencv\\17_Car_Counting\\media\\traffic.avi"
 
 cap = cv2.VideoCapture(path)
 # arkaplan çıkartmak için kullanılan fonksiyon

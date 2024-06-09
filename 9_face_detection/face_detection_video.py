@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 # videodaki yüzleri algılama
-path_cascade = "C:/Users/Yasin/Desktop/opencv/opencv/9_face_detection/haar_detection/frontalface.xml"
-path_video = "C:/Users/Yasin/Desktop/opencv/opencv/9_face_detection/media/faces.mp4"
+path_cascade = "opencv/9_face_detection/haar_detection/frontalface.xml"
+path_video = "opencv/9_face_detection/media/faces.mp4"
 
 cap = cv2.VideoCapture(path_video)
 face_cascade = cv2.CascadeClassifier(path_cascade)

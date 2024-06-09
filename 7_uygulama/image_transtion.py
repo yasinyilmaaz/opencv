@@ -5,8 +5,8 @@ import numpy as np
 def nothing(x):
     pass
 
-path1 = "C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/aircraft.jpg"
-path2 = "C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/ball.jpg"
+path1 = "opencv/7_uygulama/media/aircraft.jpg"
+path2 = "opencv/7_uygulama/media/ball.jpg"
 
 img1 = cv2.imread(path1)
 img1 = cv2.resize(img1, (640,480))

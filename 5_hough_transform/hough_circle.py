@@ -1,8 +1,8 @@
 import cv2
 import numpy as np
 
-img1=cv2.imread("C:/Users/Yasin/Desktop/opencv\opencv/5_hough_transform/media/coins.jpg")
-img2=cv2.imread("C:/Users/Yasin/Desktop/opencv\opencv/5_hough_transform/media/balls.jpg")
+img1=cv2.imread("opencv/5_hough_transform/media/coins.jpg")
+img2=cv2.imread("opencv/5_hough_transform/media/balls.jpg")
 
 gray1 = cv2.cvtColor(img1,cv2.COLOR_BGR2GRAY)
 gray2 = cv2.cvtColor(img2,cv2.COLOR_BGR2GRAY)

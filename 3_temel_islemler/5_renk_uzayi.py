@@ -3,7 +3,7 @@ import numpy as np
 # Renk Uzaylarını Dönüştürme
 
 # Bu resim BGR
-img = cv2.imread("C:/Users/Yasin/Desktop/opencv/3_temel_islemler/media/klon.jpg")
+img = cv2.imread(r"opencv\3_temel_islemler\media\klon.jpg")
 
 # BGR TO RGB
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)

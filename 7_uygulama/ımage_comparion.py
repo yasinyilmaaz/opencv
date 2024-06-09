@@ -2,8 +2,8 @@ import cv2
 import numpy as np
 # Resimleri karşılaştırma
 
-path1 ="C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/aircraft.jpg"
-path2 ="C:/Users/Yasin/Desktop/opencv/opencv/7_uygulama/media/aircraft2.jpg"
+path1 ="opencv/7_uygulama/media/aircraft.jpg"
+path2 ="opencv/7_uygulama/media/aircraft2.jpg"
 
 
 

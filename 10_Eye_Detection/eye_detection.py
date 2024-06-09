@@ -4,9 +4,9 @@ import numpy as np
 # ilk olarak yüzü algılayacağız
 # daha sonra o bölgeyi ayırıp gözleri algılayacağız
 
-path_cascade_eye ="C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\10_Eye_Detection\\haar_detection\\haarcascade_eye.xml"
-path_cascade_face ="C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\10_Eye_Detection\\haar_detection\\frontalface.xml"
-path_img = "C:\\Users\\Yasin\\Desktop\\opencv\\opencv\\10_Eye_Detection\\media\\eye.png"
+path_cascade_eye ="opencv\\10_Eye_Detection\\haar_detection\\haarcascade_eye.xml"
+path_cascade_face ="opencv\\10_Eye_Detection\\haar_detection\\frontalface.xml"
+path_img = "opencv\\10_Eye_Detection\\media\\eye.png"
 
 img = cv2.imread(path_img)
 face_cascade = cv2.CascadeClassifier(path_cascade_face)

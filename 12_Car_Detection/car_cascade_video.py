@@ -1,8 +1,8 @@
 import cv2
 
 
-path_img= 'C:\\Users\\Yasin\\Desktop\\opencv\\12_Car_Detection\media\\car.mp4'
-path_cascade = 'C:\\Users\\Yasin\\Desktop\\opencv\\12_Car_Detection\Haar_Cascade\\car.xml'
+path_img= 'opencv\\12_Car_Detection\media\\car.mp4'
+path_cascade = 'opencv\\12_Car_Detection\Haar_Cascade\\car.xml'
 
 vid = cv2.VideoCapture(path_img)
 car_cascade = cv2.CascadeClassifier(path_cascade)

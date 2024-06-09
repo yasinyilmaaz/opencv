@@ -3,8 +3,8 @@ import numpy as np
 # OpenCV ile araba algılamaya çalıştık ama yeterli olmadı
 
 
-path_img= 'C:\\Users\\Yasin\\Desktop\\opencv\\12_Car_Detection\media\\car.jpg'
-path_cascade = 'C:\\Users\\Yasin\\Desktop\\opencv\\12_Car_Detection\Haar_Cascade\\car.xml'
+path_img= 'opencv\\12_Car_Detection\media\\car.jpg'
+path_cascade = 'opencv\\12_Car_Detection\Haar_Cascade\\car.xml'
 
 
 img = cv2.imread(path_img)

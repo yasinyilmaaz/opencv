@@ -32,8 +32,9 @@ cv2.line(img, p1, p3, (0,255,0),4)
 # polylines
 # cv2.polylines(tuval, konumlar, kapaı bir şekil için True, renk, kalınlık)
 point = np.array([[[110,200], [330, 200], [290, 220], [220,250]]], np.int32)
+print(point)
 # cv2.polylines(img, [point], True, (255,255,200),4)
-cv2.polylines(img, [point], False, (255,255,100),4)
+cv2.polylines(img, [point], False, (255,25,100),4)
 
 # ellipse
 # cv2.ellipse(tuval, konum, (Xr,Yr), yataydaki açı, başlangıç derecesi, bitiş derecesi, renk, kalınlık)
