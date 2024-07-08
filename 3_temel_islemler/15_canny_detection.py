@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-# Kenar bulma
+# Kenar bulma işlemi yapar.
 # cv2.Canny(input,minThreshold,maxThreshold)
 
 cap = cv2.VideoCapture(0)

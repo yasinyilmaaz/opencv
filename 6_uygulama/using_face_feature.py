@@ -42,7 +42,7 @@ while 1:
     
     if len(contours)>0:
         try:
-            c= findMacContour(contours)
+            c= findMacContour(contours) # en büyük konturu buluyoruz
             # en küçük x değerlerini bularak konumlarını alacak
             extLeft = tuple(c[c[:,:,0].argmin()][0])
             extRight = tuple(c[c[:,:,0].argmax()][0])

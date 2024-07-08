@@ -12,7 +12,7 @@ ap.add_argument("-o", "--output", type=str, required=True, help="path to the out
 args = vars(ap.parse_args())
 
 print("[INFO] loading images...")
-imagePaths = sorted(list(paths.list_images(args["images"])))
+imagePaths = sorted(list(paths.list_images(args["images"]))) # Görüntüleri yükler ve sıralar
 
 images = []
 # magePath için görüntüyü yükler ve görüntüler listesine ekleriz

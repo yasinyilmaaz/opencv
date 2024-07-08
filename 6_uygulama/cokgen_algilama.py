@@ -13,14 +13,14 @@ _, thresh = cv2.threshold(gray,240,255,cv2.THRESH_BINARY)
 contours, _ =cv2.findContours(thresh, cv2.RETR_TREE,cv2.CHAIN_APPROX_SIMPLE)
 
 for cnt in contours:
-    epsilon = 0.01*cv2.arcLength(cnt,True)
+    epsilon = 0.01*cv2.arcLength(cnt,True) # epsilon değeri belirledik
     # konturları bulduk
-    approx = cv2.approxPolyDP(cnt,epsilon,True)
+    approx = cv2.approxPolyDP(cnt,epsilon,True) # epsilon değerine göre konturları bulduk
 
     cv2.drawContours(img, [approx],0 ,(0),5)
 
     # x ve y kordinatlarını aldık
-    x = approx.ravel()[0]
+    x = approx.ravel()[0] # x kordinatı
     y = approx.ravel()[1]
 
     # Uzunluğunu alıp ona göre kaçgen olduğunu yazdırız

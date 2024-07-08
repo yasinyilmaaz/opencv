@@ -6,7 +6,7 @@ img = cv2.imread("opencv/5_hough_transform/media/h_line.png")
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 edges = cv2.Canny(gray,75,150)
 
-lines = cv2.HoughLinesP(edges,1,np.pi/180,50,maxLineGap=200)
+lines = cv2.HoughLinesP(edges,1,np.pi/180,50,maxLineGap=200)  # 1: rho, np.pi/180: theta, 50: threshold, 200: maxLineGap
 
 for line in lines:
     (x1,y1,x2,y2) = line[0]

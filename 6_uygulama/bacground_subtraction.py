@@ -5,7 +5,7 @@ import numpy as np
 # ilk frame ile karşılaştıralacak
 # aynı olan yerler siyaha farklı olan yerler beyaza boyanacak
 
-cap = cv2.VideoCapture("opencv/6_uygulama/media/car.mp4")
+cap = cv2.VideoCapture(r"C:\Users\Yasin\Desktop\opencv\opencv\6_uygulama\media\car.mp4")
 # ilk frame alıyoruz
 ret, first_frame = cap.read()
 cv2.resize(first_frame,(640,480))
@@ -20,7 +20,7 @@ while 1:
     blur = cv2.GaussianBlur(gray,(5,5),0)
 
     # Karşılaştırma işlemi yapacağız
-    diff = cv2.absdiff(first_blur,blur)
+    diff = cv2.absdiff(first_blur,blur) # farkı alıyoruz
     _,diff =cv2.threshold(diff, 25,255,cv2.THRESH_BINARY)
 
     cv2.imshow("frame",frame)
